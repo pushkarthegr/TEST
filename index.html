@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title>PASS TIME</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://html2canvas.hertzen.com/dist/html2canvas.js"></script>
+        
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+        <style>
+            canvas{
+                background-position: center;
+                background-size: cover;
+            }
+        </style>
+    </head>
+    <body>
+        <form>
+            <input type="file" accept="image/*" title="lulism" id="lol">
+
+        </form>
+       <button id="but" onclick="il()">hello</button>
+       <img id="img">
+        <script>
+            function il(){
+                console.log(document.getElementById("lol").value);
+                url = document.getElementById("lol").value;
+                document.getElementById("img").src = url;
+            }
+        </script>
+    </body>
+</html>
